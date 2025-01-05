@@ -5,9 +5,9 @@ describe('My First Test', () => {
     cy.visit('/')
     cy.contains('h1', 'You did it!')
 
-    cy.wait(2000)
+    // cy.wait(2000)
 
     cy.visit('/about')
-    cy.get('h1').should('equal', 'About')
+    cy.get('h1').should('contain', /Santiago/)
   })
 })
